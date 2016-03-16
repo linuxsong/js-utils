@@ -2,12 +2,12 @@
         Resize image size with same ratio.
         useage: 
                 $(function() {
-                $("img").one("load", function() {
-                        resizeImage(320,320, this);
-                }).each(function() {
-                        if(this.complete) $(this).load();
-                });
-        });
+                        $("img").one("load", function() {
+                                resizeImage(320,320, this);
+                        }).each(function() {
+                                if(this.complete) $(this).load();
+                        });
+                 });
         */
         function resizeImage(maxWidth, maxHeight, objImg)
         {
