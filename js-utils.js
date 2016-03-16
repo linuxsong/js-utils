@@ -5,6 +5,7 @@
                         $("img").one("load", function() {
                                 resizeImage(320,320, this);
                         }).each(function() {
+                                //when the image is cached
                                 if(this.complete) $(this).load();
                         });
                  });
