@@ -18,6 +18,6 @@
                 if (img.width > maxWidth ||  img.height > maxHeight) {
                         minRatio = Math.min(maxWidth/img.width, maxHeight/img.height);
                 }
-                objImg.style.width = img.width * minRatio;
-                objImg.style.height = img.height * minRatio;
+                objImg.style.width = img.width * minRatio + "px";
+                objImg.style.height = img.height * minRatio + "px";
         }
