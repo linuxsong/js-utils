@@ -14,8 +14,10 @@
         {
                 var img = new Image();
                 img.src = objImg.src;
-                if (img.width <= maxWidth && img.height <= maxHeight) return;
-                var ratio = Math.min(maxWidth/img.width, maxHeight/img.height);
-                objImg.width = img.width * ratio;
-                objImg.height = img.height * ratio;
+                var minRatio = 1;
+                if (img.width > maxWidth ||  img.height > maxHeight) {
+                        minRatio = Math.min(maxWidth/img.width, maxHeight/img.height);
+                }
+                objImg.style.width = img.width * minRatio;
+                objImg.style.height = img.height * minRatio;
         }
